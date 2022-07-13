@@ -1,37 +1,49 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Pagination } from 'swiper'
+
+import StarRatings from "react-star-ratings";
 
 
 const collection = [
     {
         image: 'https://placeimg.com/400/225/arch',
-        star: '3',
-        name: 'dafasfa',
+        rating: 3,
+        Mname: 'dafasfa',
         price: "300"
     },
     {
         image: 'https://placeimg.com/400/225/arch',
-        star: '3',
-        name: 'dafasfa',
+        rating: 3,
+        Mname: 'dafasfa',
         price: "300"
     },
     {
         image: 'https://placeimg.com/400/225/arch',
-        star: '3',
-        name: 'dafasfa',
+        rating: 1,
+        Mname: 'dafasfa',
         price: "300"
     },
     {
         image: 'https://placeimg.com/400/225/arch',
-        star: '3',
-        name: 'dafasfa',
+        rating: 4,
+        Mname: 'dafasfssssa',
+        price: "200"
+    },
+    {
+        image: 'https://placeimg.com/400/225/arch',
+        rating: 3,
+        Mname: 'dafasfa',
         price: "300"
     },
-   
+
 ]
 
 
 const TopCollection = () => {
+
+
     return (
         <div>
             <div className='mx-auto w-1/2 py-10 '>
@@ -42,26 +54,55 @@ const TopCollection = () => {
             </div>
 
             <div class="flex w-full  px-14">
-                {
-                    collection.map(item =>
-                        <div class="grid  flex-grow card bg-base-300 rounded-box ">
-                            <div class="card  bg-base-100 shadow-xl">
-                                <figure><img src="https://placeimg.com/400/225/arch" width='100%' alt="Shoes" /></figure>
-                                <div class="card-body">
-                                    <h2 class="card-title">
-                                        Shoes!
-                                        <div class="badge badge-secondary">NEW</div>
-                                    </h2>
-                                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                                    <div class="card-actions justify-end">
-                                        <div class="badge badge-outline">Fashion</div>
-                                        <div class="badge badge-outline">Products</div>
+                <Swiper
+
+                    spaceBetween={30}
+                    breakpoints={{
+                        920: {
+                            slidesPerView: 4
+                        },
+
+                        720: {
+                            slidesPerView: 3
+                        },
+
+                        450: {
+                            slidesPerView: 2
+                        }
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                >
+                    {
+                        collection.map(p =>
+                            <SwiperSlide className=''>
+                                <div class="card  bg-base-100 shadow-xl responsive_swiper">
+                                    <figure><img src={p.image} width='100%' alt="Shoes" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            {p.Mname}
+                                            <div class="badge badge-secondary">NEW</div>
+                                        </h2>
+                                        <p>price ${p.price}</p>
+
+
+                                        <StarRatings
+                                            rating={p.rating}
+                                            starRatedColor="red"
+                                            starDimension='30px'
+                                            numberOfStars={5}
+                                            name='rating'
+                                        />
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    )
-                }
+                            </SwiperSlide>
+                        )
+                    }
+
+                </Swiper>
 
 
 
@@ -73,3 +114,21 @@ const TopCollection = () => {
 }
 
 export default TopCollection
+
+
+{/* <div class="grid  flex-grow card bg-base-300 rounded-box ">
+<div class="card  bg-base-100 shadow-xl">
+    <figure><img src="https://placeimg.com/400/225/arch" width='100%' alt="Shoes" /></figure>
+    <div class="card-body">
+        <h2 class="card-title">
+            Shoes!
+            <div class="badge badge-secondary">NEW</div>
+        </h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+            <div class="badge badge-outline">Fashion</div>
+            <div class="badge badge-outline">Products</div>
+        </div>
+    </div>
+</div>
+</div> */}
