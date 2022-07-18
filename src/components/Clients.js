@@ -49,6 +49,43 @@ const Clients = () => {
     return (
         <div>
 
+            <div class="flex w-full  px-14">
+                <Swiper
+
+                    spaceBetween={100}
+                    breakpoints={{
+                        920: {
+                            slidesPerView: 5
+                        },
+
+                        720: {
+                            slidesPerView: 4
+                        },
+
+                        450: {
+                            slidesPerView: 3
+                        }
+                    }}
+
+                    className="mySwiper"
+                >
+                    {
+                        clientCollection.map(client =>
+                            <SwiperSlide className=''>
+                                <div class="opacity-50 duration-1000 hover:opacity-100  w-[75%] responsive_swiper">
+                                    <><img src={client.img} className="w-[10%]" alt="Shoes" /></>
+                                </div>
+                            </SwiperSlide>
+                        )
+                    }
+
+                </Swiper>
+
+
+
+
+
+            </div>
         </div>
     )
 }
