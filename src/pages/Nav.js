@@ -1,6 +1,7 @@
 import { faPhone, faHeart, faUser, faBars, faX, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Banner from '../components/Banner';
 
 const Nav = (props) => {
@@ -35,7 +36,7 @@ const Nav = (props) => {
                             <label tabindex="0" class=""><p className='group-hover:text-[#999999] text-[#999999]'><FontAwesomeIcon icon={faUser} className='group-hover:text-[#ff4c3b] text-[#999999]'></FontAwesomeIcon> My Account</p></label>
                             <ul tabindex="0" class="dropdown-content menu   bg-base-100 w-52">
                                 <div className='bg-[#f8f8f8] h-[15px]'></div>
-                                <p className='hover:bg-white text-left p-2 shadow ml-3 text-zinc-600'><a>Login</a><br /><a>Register</a><br /><a>Logout</a></p>
+                                <p className='hover:bg-white text-left p-2 shadow ml-3 text-zinc-600'><Link to="/login">Login</Link><br /><Link to="/register">Register</Link><br /><a>Logout</a></p>
                             </ul>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ const Nav = (props) => {
                                 {props.open ? <FontAwesomeIcon icon={faX} className='mr-3 text-[24px] font-[900] pr-[40px] text-[#222]'></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars} className='mr-3 text-[24px] font-[900] pr-[40px] text-[#222]'></FontAwesomeIcon>}
                             </div>
 
-                            {props.open && <div className={` z-40 h-[100vh] w-full absolute`}>
+                            {props.open && <div className={` z-40 h-[100vh] w-[80%] absolute`}>
 
                                 <div className={`top-32 z-20 left-0  bg-white duration-1000 ease-in-out transition w-1/5  h-full ${props.open ? 'left-0 top-[0px] fixed' : 'left-[-50px] '}`}>
                                     <ul class="menu p-0">
