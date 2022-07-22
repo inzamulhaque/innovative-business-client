@@ -3,7 +3,7 @@ import React from 'react';
 const OnlineService = () => {
     return (
         <div className='px-14 mt-6'>
-            <div className='divider'></div>
+            <div className='divider dark:invert'></div>
             <div className='flex flex-col lg:flex-row justify-between items-center py-[50px]'>
                 <div className='flex justify-center px-11 w-full group'>
                     <div className="w-[65px] h-[65px] group-hover:scale-125 duration-1000">
@@ -12,11 +12,11 @@ const OnlineService = () => {
                         </svg>
                     </div>
                     <div className='ml-5 text-left pr-0 mr-0'>
-                        <p className='duration-1000 text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
-                        <p className='text-[#777777] text-[20px] font-[400]'>Free Shipping Worldwide</p>
+                        <p className='duration-1000 dark:text-[#cfd4da] text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
+                        <p className='text-[#777777] text-[20px] dark:text-[#cfd4da] font-[400]'>Free Shipping Worldwide</p>
                     </div>
                 </div>
-                <div className='divider lg:divider-horizontal'></div>
+                <div className='divider dark:invert lg:divider-horizontal'></div>
                 <div className='flex justify-center px-11 w-full group'>
                     <div className="w-[65px] h-[65px] group-hover:scale-125 duration-1000">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -117 679.99892 679">
@@ -24,11 +24,11 @@ const OnlineService = () => {
                         </svg>
                     </div>
                     <div className='ml-5 text-left pr-0 mr-0'>
-                        <p className='duration-1000 text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
-                        <p className='text-[#777777] text-[20px] font-[400]'>Free Shipping Worldwide</p>
+                        <p className='duration-1000 dark:text-[#cfd4da] text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
+                        <p className='text-[#777777] text-[20px] dark:text-[#cfd4da] font-[400]'>Free Shipping Worldwide</p>
                     </div>
                 </div>
-                <div className='divider lg:divider-horizontal'></div>
+                <div className='divider dark:invert lg:divider-horizontal'></div>
                 <div className='flex justify-center px-11 w-full group'>
                     <div className="w-[65px] h-[65px] group-hover:scale-125 duration-1000">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -117 679.99892 679">
@@ -36,12 +36,12 @@ const OnlineService = () => {
                         </svg>
                     </div>
                     <div className='ml-5 text-left pr-0 mr-0'>
-                        <p className='duration-1000 text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
-                        <p className='text-[#777777] text-[20px] font-[400]'>Free Shipping Worldwide</p>
+                        <p className='duration-1000 dark:text-[#cfd4da] text-[#212529] group-hover:text-[#ff4c3b] text-[24px] font-[500] mt-1'>Free Shipping</p>
+                        <p className='text-[#777777] text-[20px] dark:text-[#cfd4da] font-[400]'>Free Shipping Worldwide</p>
                     </div>
                 </div>
             </div>
-            <div className='divider'></div>
+            <div className='divider dark:invert'></div>
         </div>
     );
 };

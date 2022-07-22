@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
 
-    <>
+    <div className="bg-white dark:bg-[#2b2b2b] dark:text-white ">
 
       <Banner />
       <TopHeros />
@@ -25,7 +25,7 @@ const Home = () => {
       <OnlineService />
       <Clients />
 
-    </>
+    </div>
   )
 }
 
