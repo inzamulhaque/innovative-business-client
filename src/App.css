@@ -47,3 +47,33 @@
 @media screen and (max-width: 800px) {
 
 }
+
+
+/* ,,,,,,,,,,,,,, */
+
+.page-sidebar{
+  width: 255px;
+  position: fixed;
+  background: rgb(255 255 255);
+  top: 0;
+  height: 100vh;
+  z-index: 9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.open{
+
+  display: block;
+  margin-left: -260px;
+}
+
+.mybody-close{
+  margin-left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.mybody-open{
+  margin-left: 255px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
