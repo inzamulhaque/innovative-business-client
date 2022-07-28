@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../components/Banner'
+import CreateTodo from '../components/CreateTodo'
 import FashionTrand from '../components/FashionTrand'
 import HeroSection from '../components/HeroSection'
 import Layouts from '../components/Layouts'
+import ShowTodo from '../components/ShowTodo'
 import SpecialProduct from '../components/SpecialProduct'
+import TestCompo from '../components/TestCompo'
 import TopCollection from '../components/TopCollection'
 import TopHeros from '../components/TopHeros'
 
@@ -11,7 +14,6 @@ import TopHeros from '../components/TopHeros'
 const Home = () => {
 
   return (
-<<<<<<< HEAD
     <>
       <Layouts showFooter={true} showHeader={true}>
 
@@ -20,19 +22,11 @@ const Home = () => {
         <TopCollection />
         <FashionTrand />
         <SpecialProduct />
+        {/* <TestCompo/> */}
+        <CreateTodo/>
+        <ShowTodo/>
       </Layouts>
     </>
-=======
-    <div >
-
-      <Banner />
-      <TopHeros />
-      <HeroSection />
-      <TopCollection />
-      <FashionTrand />
-      <SpecialProduct />
-    </div>
->>>>>>> f6af39c0429e7a9114cc462fa8dd769296b845e4
   )
 }
 

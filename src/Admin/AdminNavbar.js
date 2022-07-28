@@ -1,16 +1,21 @@
 import { useState } from "react"
 
-const AdminNavbar = ({handleClick}) => {
+const AdminNavbar = ({ handleClick }) => {
 
-   
+
     return (
         <div class="navbar bg-base-100 z-10 fixed top-0">
             <div class="flex-1">
                 <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <div className="pl-9">
+
+                    <label onClick={handleClick}> <i class="fa-solid fa-bars"></i></label>
+                </div>
             </div>
+
             <div class="flex-none gap-2">
 
-                 <label onClick={handleClick}> <i class="fa-solid fa-bars"></i></label>
+
                 {/*  */}
                 <div class="form-control">
                     <input type="text" placeholder="Search" class="input input-bordered" />

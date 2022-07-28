@@ -35,45 +35,45 @@
   height: 100%;
   object-fit: cover;
 }
-.mySwiper{
+.mySwiper {
   height: 300px;
 }
 /*  */
 
-
-.custome-width{
+.custome-width {
   width: inherit;
 }
 @media screen and (max-width: 800px) {
-
 }
-
 
 /* ,,,,,,,,,,,,,, */
 
-.page-sidebar{
-  width: 255px;
+.page-sidebar {
+  width: 320px;
   position: fixed;
   background: rgb(255 255 255);
   top: 0;
   height: 100vh;
   z-index: 9;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.open{
-
+.open {
   display: block;
-  margin-left: -260px;
+  margin-left: -320px;
 }
 
-.mybody-close{
+.mybody-close {
   margin-left: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+
+  background-color: rgb(247 247 249);
 }
-.mybody-open{
-  margin-left: 255px;
-  -webkit-transition: .3s;
-  transition: .3s;
+.mybody-open {
+  margin-left: 320px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+
+  background-color: rgb(247 247 249);
 }
